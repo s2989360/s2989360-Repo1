@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://web-harvest.sourceforge.net/schema/1.0/config" scriptlang="groovy">
+
+	<script><![CDATA[
+	    import com.ibank.automation.invoicesusecase.app.AppInvoicePlane
+	    import com.ibank.automation.invoicesusecase.processor.CreateProductProcessorSetError      
+	
+	    String docId = _sys_doc_id.toString();
+	    String transactionId = _sys_transaction_id.toString();
+	    String error = errormessage.toString();
+	    String status = status.toString();
+	
+	    def app = AppInvoicePlane.init(binding).params([
+	    		'_sys_doc_id': docId, 
+	    		'error' : error,
+	    		'status' : status
+	    	]).get();       
+	    def processedTransaction = app.processTransaction(CreateProductProcessorSetError.class, transactionId);		        
+	]]></script>       
+          
+    <export include-original-data="true">
+    </export>
+</config>

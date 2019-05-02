@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://web-harvest.sourceforge.net/schema/1.0/config" scriptlang="groovy">
+
+	<!--
+	#1 Secret Vault credentials to configure
+	alias: invoiceplane_credentials_alias
+	key: wf-robot@mail.com  
+	value: BotsRock4ever! 
+	
+	#2 Global Variable to configure
+	name: invoiceplane_url
+	value: https://train-invoiceplane.workfusion.com
+	-->
+
+	<var-def name="invoiceplane_url">
+  		<var-global name="invoiceplane_url"/>
+    </var-def>  
+
+    <robotics-flow>
+        <robot driver="chrome" close-on-completion="true" >
+            <script><![CDATA[
+                import com.ibank.automation.invoicesusecase.app.AppInvoicePlane
+                import com.ibank.automation.invoicesusecase.supplier.TransactionSupplierCollectProducts
+                
+				def app = AppInvoicePlane.init(binding).params([
+					'invoiceplane_url' : invoiceplane_url.getWrappedObject().get(0).toString()
+				]).get();
+                def transactions = app.loadTransactions(TransactionSupplierCollectProducts.class);
+                // Exporting only transaction ids to the next steps.
+                result = [];
+                transactions.each {
+                    result << ['transaction_id': it.id];
+                }
+                ]]></script>
+        </robot>
+    </robotics-flow>
+
+    <export include-original-data="false">
+        <multi-column list="${result}" split-results="true">
+            <put-to-column-getter name="_sys_transaction_id" property="transaction_id"/>
+        </multi-column>
+    </export>
+</config>

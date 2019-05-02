@@ -1,0 +1,14 @@
+/target/
+dependency-reduced-pom.xml
+/bin/
+.*
+!.gitignore
+!.project
+!.classpath
+/build.xml
+/maven-build.properties
+/maven-build.xml
+export_*
+*_wfs-working-copy.csv
+/.idea/
+*.iml

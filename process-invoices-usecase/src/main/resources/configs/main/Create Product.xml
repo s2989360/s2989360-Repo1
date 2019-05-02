@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://web-harvest.sourceforge.net/schema/1.0/config" scriptlang="groovy">
+
+	<!--
+	#1 Secret Vault credentials to configure
+	alias: invoiceplane_credentials_alias
+	key: wf-robot@mail.com  
+	value: BotsRock4ever! 
+	
+	#2 Global Variable to configure
+	name: invoiceplane_url
+	value: https://train-invoiceplane.workfusion.com
+	-->
+	
+	<var-def name="invoiceplane_url">
+  		<var-global name="invoiceplane_url"/>
+    </var-def>  
+    
+	<script><![CDATA[  
+		status = "success";
+		errormessage = "";
+	]]></script>
+  
+	<try>
+    	<body>
+            <robotics-flow>
+                <robot driver="chrome" close-on-completion="true" >
+                    <script><![CDATA[
+                            import com.ibank.automation.invoicesusecase.app.AppInvoicePlane
+                            import com.ibank.automation.invoicesusecase.processor.CreateProductProcessor      
+
+                            String docId = _sys_doc_id.toString();
+                            String transactionId = _sys_transaction_id.toString();
+
+                            def app = AppInvoicePlane.init(binding).params([
+                            		'_sys_doc_id': docId, 
+                            		'invoiceplane_url' : invoiceplane_url.getWrappedObject().get(0).toString()
+                            	]).get();       
+                            def processedTransaction = app.processTransaction(CreateProductProcessor.class, transactionId);		        
+                    ]]></script>
+                </robot>
+            </robotics-flow>
+        </body>
+  		<catch>
+            <script><![CDATA[                
+				errormessage = _exception_stacktrace.getWrappedObject();
+				log.error(errormessage);
+				status = "failure";
+            ]]></script>
+        </catch>
+    </try>          
+          
+    <export include-original-data="true">
+    	<single-column name="status" value="${status}"/>
+      	<single-column name="errormessage" value="${errormessage}"/>
+    </export>
+</config>

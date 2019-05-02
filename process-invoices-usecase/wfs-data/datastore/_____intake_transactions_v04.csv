@@ -1,0 +1,86 @@
+system_id,transaction_id,bp_run_id,transaction_data
+2477,c7b8d2d7-4a1d-4cdc-a753-6e0479ccb6b0,eea5c0c4-029d-47cf-b668-d669a09a5dd3,"{
+  ""meta"" : { },
+  ""id"" : ""c7b8d2d7-4a1d-4cdc-a753-6e0479ccb6b0"",
+  ""docs"" : [ {
+    ""meta"" : {
+      ""cc"" : """",
+      ""subject"" : ""Email One"",
+      ""from"" : ""Andrei Harhots <aharhots@gmail.com>"",
+      ""to"" : ""lecter.hannibal.rpa@gmail.com""
+    },
+    ""id"" : ""ce696247-95ba-4659-87f2-a0c04e7549bf"",
+    ""name"" : ""Email One"",
+    ""type"" : ""Message"",
+    ""textLink"" : ""http://localhost:15110/doc-upload/89ebf189-de31-4f0a-b551-8577ba9a6523.html"",
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : null,
+    ""extractedFields"" : { },
+    ""origin"" : null,
+    ""merged"" : false
+  }, {
+    ""meta"" : { },
+    ""id"" : ""a61d005c-9401-4ea0-a139-92da3b0a769b"",
+    ""name"" : ""odf-input-1.xlsx"",
+    ""type"" : ""Attachment"",
+    ""textLink"" : null,
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : ""http://localhost:15110/doc-upload/591fbd06-ebeb-4e40-bef2-bf3d869d8c6c.xlsx"",
+    ""extractedFields"" : { },
+    ""origin"" : null,
+    ""merged"" : false
+  } ]
+}"
+2478,137f9f44-d7be-4587-ba2e-051f6087bf83,eea5c0c4-029d-47cf-b668-d669a09a5dd3,"{
+  ""meta"" : { },
+  ""id"" : ""137f9f44-d7be-4587-ba2e-051f6087bf83"",
+  ""docs"" : [ {
+    ""meta"" : {
+      ""cc"" : """",
+      ""subject"" : ""Email Two"",
+      ""from"" : ""Andrei Harhots <aharhots@gmail.com>"",
+      ""to"" : ""lecter.hannibal.rpa@gmail.com""
+    },
+    ""id"" : ""71745aae-09b4-4bca-8fb8-cddaa43a8f25"",
+    ""name"" : ""Email Two"",
+    ""type"" : ""Message"",
+    ""textLink"" : ""http://localhost:15110/doc-upload/dff85e32-445a-4696-a9ba-9db65ffc1060.html"",
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : null,
+    ""extractedFields"" : { },
+    ""origin"" : null,
+    ""merged"" : false
+  }, {
+    ""meta"" : { },
+    ""id"" : ""53a5b39b-f115-4673-87e8-8f8f76569ac9"",
+    ""name"" : ""odf-input-2.xlsx"",
+    ""type"" : ""Attachment"",
+    ""textLink"" : null,
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : ""http://localhost:15110/doc-upload/c133b10c-9183-41d0-a2f8-7b4eb433fc68.xlsx"",
+    ""extractedFields"" : { },
+    ""origin"" : null,
+    ""merged"" : false
+  } ]
+}"
+2479,67a1ea95-163a-4919-8b74-07de93db2fc2,eea5c0c4-029d-47cf-b668-d669a09a5dd3,"{
+  ""meta"" : { },
+  ""id"" : ""67a1ea95-163a-4919-8b74-07de93db2fc2"",
+  ""docs"" : [ {
+    ""meta"" : {
+      ""cc"" : """",
+      ""subject"" : ""Test"",
+      ""from"" : ""Hannibal Lecter <lecter.hannibal.rpa@gmail.com>"",
+      ""to"" : ""lecter.hannibal.rpa@gmail.com""
+    },
+    ""id"" : ""5b80733b-6e08-45e4-98b0-48a51a66fa81"",
+    ""name"" : ""Test"",
+    ""type"" : ""Message"",
+    ""textLink"" : ""http://localhost:15110/doc-upload/4673e344-59d3-4fa3-ab29-0edf172ed568.html"",
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : null,
+    ""extractedFields"" : { },
+    ""origin"" : null,
+    ""merged"" : false
+  } ]
+}"

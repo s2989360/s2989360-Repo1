@@ -1,0 +1,162 @@
+system_id,transaction_id,bp_run_id,transaction_data
+2483,dc9592f1-5477-49eb-a7b1-09c2bd80a2f1,94a83d0d-26d5-4768-95bd-ff1ad6257b5e,"{
+  ""meta"" : { },
+  ""id"" : ""dc9592f1-5477-49eb-a7b1-09c2bd80a2f1"",
+  ""docs"" : [ {
+    ""meta"" : { },
+    ""id"" : ""bba201b4-bbec-4330-b4ac-21efcfdda45e"",
+    ""name"" : ""Chvy Camarro"",
+    ""type"" : ""com.ibank.automation.system.invoiceplane.to.ProductTO"",
+    ""textLink"" : null,
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : null,
+    ""extractedFields"" : {
+      ""price"" : {
+        ""singleValue"" : ""55000.0""
+      },
+      ""description"" : {
+        ""singleValue"" : ""yellow beast""
+      },
+      ""family"" : {
+        ""singleValue"" : ""Cars""
+      },
+      ""sku"" : {
+        ""singleValue"" : ""120120.0""
+      },
+      ""product_name"" : {
+        ""singleValue"" : ""Chvy Camarro""
+      },
+      ""tax_rate"" : {
+        ""singleValue"" : ""None""
+      }
+    },
+    ""origin"" : null,
+    ""merged"" : false
+  }, {
+    ""meta"" : { },
+    ""id"" : ""865e0e51-385d-4e10-9418-28b94bed8f93"",
+    ""name"" : ""Dodge Viper"",
+    ""type"" : ""com.ibank.automation.system.invoiceplane.to.ProductTO"",
+    ""textLink"" : null,
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : null,
+    ""extractedFields"" : {
+      ""price"" : {
+        ""singleValue"" : ""74000.0""
+      },
+      ""description"" : {
+        ""singleValue"" : ""britva""
+      },
+      ""family"" : {
+        ""singleValue"" : ""Cars""
+      },
+      ""sku"" : {
+        ""singleValue"" : ""121121.0""
+      },
+      ""product_name"" : {
+        ""singleValue"" : ""Dodge Viper""
+      },
+      ""tax_rate"" : {
+        ""singleValue"" : ""None""
+      }
+    },
+    ""origin"" : null,
+    ""merged"" : false
+  }, {
+    ""meta"" : { },
+    ""id"" : ""4457c1c6-7dda-44b9-91e2-fc2a2f888016"",
+    ""name"" : ""Apple iMac 30"",
+    ""type"" : ""com.ibank.automation.system.invoiceplane.to.ProductTO"",
+    ""textLink"" : null,
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : null,
+    ""extractedFields"" : {
+      ""price"" : {
+        ""singleValue"" : """"
+      },
+      ""description"" : {
+        ""singleValue"" : ""for image processing""
+      },
+      ""family"" : {
+        ""singleValue"" : ""Computers""
+      },
+      ""sku"" : {
+        ""singleValue"" : ""122122.0""
+      },
+      ""product_name"" : {
+        ""singleValue"" : ""Apple iMac 30""
+      },
+      ""tax_rate"" : {
+        ""singleValue"" : ""None""
+      }
+    },
+    ""origin"" : null,
+    ""merged"" : false
+  } ]
+}"
+2484,5255c503-7dae-48a0-83b0-ee5a43509e80,94a83d0d-26d5-4768-95bd-ff1ad6257b5e,"{
+  ""meta"" : { },
+  ""id"" : ""5255c503-7dae-48a0-83b0-ee5a43509e80"",
+  ""docs"" : [ {
+    ""meta"" : { },
+    ""id"" : ""3ccdc4af-0c0f-4da6-81de-696a3e927725"",
+    ""name"" : ""iPhone X"",
+    ""type"" : ""com.ibank.automation.system.invoiceplane.to.ProductTO"",
+    ""textLink"" : null,
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : null,
+    ""extractedFields"" : {
+      ""price"" : {
+        ""singleValue"" : ""1500.0""
+      },
+      ""description"" : {
+        ""singleValue"" : ""hipsters dream""
+      },
+      ""family"" : {
+        ""singleValue"" : ""Phones""
+      },
+      ""sku"" : {
+        ""singleValue"" : ""220120.0""
+      },
+      ""product_name"" : {
+        ""singleValue"" : ""iPhone X""
+      },
+      ""tax_rate"" : {
+        ""singleValue"" : ""None""
+      }
+    },
+    ""origin"" : null,
+    ""merged"" : false
+  }, {
+    ""meta"" : { },
+    ""id"" : ""a41413b0-e4b3-4e1c-851f-d2e880657143"",
+    ""name"" : ""Google Nexus"",
+    ""type"" : ""com.ibank.automation.system.invoiceplane.to.ProductTO"",
+    ""textLink"" : null,
+    ""taggedTextLink"" : null,
+    ""originalDocumentLink"" : null,
+    ""extractedFields"" : {
+      ""price"" : {
+        ""singleValue"" : ""800.0""
+      },
+      ""description"" : {
+        ""singleValue"" : """"
+      },
+      ""family"" : {
+        ""singleValue"" : ""Phones""
+      },
+      ""sku"" : {
+        ""singleValue"" : ""221121.0""
+      },
+      ""product_name"" : {
+        ""singleValue"" : ""Google Nexus""
+      },
+      ""tax_rate"" : {
+        ""singleValue"" : ""None""
+      }
+    },
+    ""origin"" : null,
+    ""merged"" : false
+  } ]
+}"
+,,,

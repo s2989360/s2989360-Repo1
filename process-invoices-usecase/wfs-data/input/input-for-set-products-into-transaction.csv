@@ -1,0 +1,4 @@
+submissionUUID,start_date,author,mail_protocol,mail_host,mail_port,mail_credential_alias,mail_ssl,input_folder,mark_as_read,post_action,target_folder,_sys_transaction_id
+5ff32f7e-8a78-4e21-a53b-fa8f493cd6b8,Tue Apr 23 18:47:22 UTC 2019,aharhots,imap,imap.gmail.com,993,gmail,TRUE,,TRUE,none,,c7b8d2d7-4a1d-4cdc-a753-6e0479ccb6b0
+9313c318-dfa0-4f0e-bd6f-2bfb74149e6c,Tue Apr 23 18:47:22 UTC 2019,aharhots,imap,imap.gmail.com,993,gmail,TRUE,,TRUE,none,,137f9f44-d7be-4587-ba2e-051f6087bf83
+6a90f479-7d71-4e74-8731-97ba37a50ba1,Tue Apr 23 18:47:22 UTC 2019,aharhots,imap,imap.gmail.com,993,gmail,TRUE,,TRUE,none,,67a1ea95-163a-4919-8b74-07de93db2fc2
